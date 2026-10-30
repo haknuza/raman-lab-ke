@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "mode": "hardware",
+  "machine_id": "REPLACE with printer identifier",
+  "bounds_mm": {"min": null, "max": null},
+  "sample_origin_mm": null,
+  "axis_sign": null,
+  "motion": {
+    "xy_speed_mm_s": 5,
+    "z_speed_mm_s": 1,
+    "travel_z_mm": null,
+    "timeout_s": 120
+  },
+  "hardware": {
+    "moonraker_url": "http://REPLACE-WITH-CONFIRMED-ADDRESS:7125",
+    "bridge_command": ["REPLACE-WITH-INSTRUMENT-PYTHON", "REPLACE-WITH-VENDOR-BRIDGE.py"],
+    "bridge_timeout_s": 15,
+    "geometry_calibration_id": "",
+    "api_key_env": "RAMAN_MOONRAKER_API_KEY"
+  }
+}

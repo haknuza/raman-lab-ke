@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "mode": "simulation",
+  "machine_id": "Ender-3-V3-KE-SIMULATION",
+  "bounds_mm": {"min": [0, 0, 0], "max": [220, 220, 240]},
+  "sample_origin_mm": [0, 0],
+  "axis_sign": [1, 1],
+  "motion": {
+    "xy_speed_mm_s": 10,
+    "z_speed_mm_s": 2,
+    "travel_z_mm": 40,
+    "timeout_s": 120
+  }
+}

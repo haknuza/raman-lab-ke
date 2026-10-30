@@ -1,0 +1,35 @@
+# Local environments, configuration and credentials
+.venv/
+**/.venv/
+**/.env
+**/.env.*
+!**/.env.example
+**/.remote-access-password
+*.pem
+*.key
+profiles/machine.actual.json
+profiles/*.local.json
+
+# Experiment data and generated artifacts
+runs/
+tmp/
+**/results/
+**/captures/
+**/*.log
+**/previous_stream.json
+**/local-stream.xml
+**/.run-lock
+
+# Supplied instrument manuals remain local; do not redistribute them in Git.
+documentation/instruments/*
+!documentation/instruments/README.md
+
+# Runtime/editor files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+node_modules/
+.DS_Store
+.vscode/
+.idea/
+.upstream-archive/

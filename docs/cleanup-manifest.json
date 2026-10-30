@@ -1,0 +1,86 @@
+{
+  "upstream_commit": "fe9659cb25dd0549680648308c777be4df1dd9d7",
+  "removed": [
+    {
+      "path": "docs/report/build.sh",
+      "bytes": 240
+    },
+    {
+      "path": "docs/report/images/hardware-recording.jpg",
+      "bytes": 50214
+    },
+    {
+      "path": "docs/report/main.tex",
+      "bytes": 15118
+    },
+    {
+      "path": "output/pdf/PhotonicsAI_Homework4_Report.pdf",
+      "bytes": 532488
+    },
+    {
+      "path": "presentation/README.md",
+      "bytes": 264
+    },
+    {
+      "path": "presentation/agentic_cell_erasing_simple.pdf",
+      "bytes": 433701
+    },
+    {
+      "path": "screenshots/01-desktop-light.png",
+      "bytes": 92504
+    },
+    {
+      "path": "screenshots/02-desktop-dark-assistant.png",
+      "bytes": 356633
+    },
+    {
+      "path": "screenshots/03-mobile.png",
+      "bytes": 50470
+    },
+    {
+      "path": "screenshots/04-path-approval-demo.png",
+      "bytes": 114453
+    },
+    {
+      "path": "screenshots/README.md",
+      "bytes": 665
+    },
+    {
+      "path": "shape-scanner/app.py",
+      "bytes": 5083
+    },
+    {
+      "path": "shape-scanner/detector.py",
+      "bytes": 4020
+    },
+    {
+      "path": "shape-scanner/examples/page.jpg",
+      "bytes": 50905
+    },
+    {
+      "path": "shape-scanner/examples/verified-detection.jpg",
+      "bytes": 150245
+    },
+    {
+      "path": "shape-scanner/index.html",
+      "bytes": 5693
+    },
+    {
+      "path": "shape-scanner/mcp_server.py",
+      "bytes": 1802
+    },
+    {
+      "path": "shape-scanner/test_scanner.py",
+      "bytes": 1878
+    },
+    {
+      "path": "videos/IMG_0030.MOV",
+      "bytes": 12762062
+    },
+    {
+      "path": "videos/IMG_7455.MOV",
+      "bytes": 12057452
+    }
+  ],
+  "total_bytes": 26685890
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "sample_id": "FULL BED planning example",
+  "notes": "220 x 220 mm coverage goal; geometry and focus have not been verified on hardware.",
+  "grid": {"x_mm": [0, 220], "y_mm": [0, 220], "pitch_mm": [5, 5], "pattern": "raster"},
+  "focus": {
+    "machine_z_mm": 20,
+    "slope_x": 0,
+    "slope_y": 0,
+    "reference_sample_mm": [0, 0],
+    "calibration_id": "SIMULATED focus",
+    "lens_id": "SIMULATED optics"
+  },
+  "acquisition": {
+    "integration_ms": 3000,
+    "averages": 1,
+    "laser_nm": 785,
+    "settle_s": 0.5,
+    "laser_settle_s": 0,
+    "timeout_s": 15,
+    "laser_setting": "SIMULATION only; no optical output",
+    "stop_on_saturation": true
+  },
+  "analysis": {"band_cm1": [940, 1060], "baseline": "linear_endpoints"}
+}

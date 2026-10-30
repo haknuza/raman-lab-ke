@@ -1,0 +1,47 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  printer:
+    defaults:
+      run:
+        working-directory: printer-control
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        python: ['3.10', '3.14']
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: printer-control/requirements.txt
+      - name: Install
+        run: python -m pip install -r requirements.txt
+      - name: Check dependencies
+        run: python -m pip check
+      - name: Test without hardware
+        run: python -m unittest discover -s tests -v
+
+  raman:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test Raman pipeline without hardware
+        run: python -m unittest discover -s tests -v
+      - name: Generate simulated scan and check report logic
+        run: |
+          python -m raman_scanner run --machine profiles/machine.simulation.json --scan profiles/scan.demo.json --output runs/ci-demo
+          node tests/check_report.cjs runs/ci-demo/report.html
